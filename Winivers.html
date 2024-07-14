@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winivers - Logiciels Informatiques</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            width: 150px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .software-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .software {
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .software:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .software img {
+            width: 100px;
+            height: 100px;
+        }
+        .software h2 {
+            font-size: 1.4em;
+            margin: 10px 0;
+        }
+        .download-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+        .about, .contact {
+            padding: 20px 0;
+        }
+        .about p, .contact p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        footer .footer-links a:hover {
+            color: #ffcc00;
+        }
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        @media (max-width: 768px) {
+            .software {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo_winivers.jpg" alt="Winivers Logo">
+        <h1>Bienvenue chez Winivers</h1>
+    </header>
+    <nav>
+        <a href="#home">Accueil</a>
+        <a href="#software">Logiciels</a>
+        <a href="#about">À Propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero" id="home">
+        
+    </div>
+    <div class="container" id="software">
+        <h2>Nos Logiciels</h2>
+        <div class="software-list">
+            <div class="software">
+                <img src="logo_hiwriter.jpg" alt="HiWriter Logo">
+                <h2>HiWriter</h2>
+                <p>Logiciel de traitement de texte</p>
+                <a class="download-link" href="https://t.me/winivers_Tech">Télécharger</a>
+            </div>
+            <div class="software">
+                <img src="logo_hinote.jpg" alt="HiNote Logo">
+                <h2>HiNote</h2>
+                <p>Logiciel de prise de notes</p>
+                <a class="download-link" href="https://t.me/winivers_Tech">Télécharger</a>
+            </div>
+            <div class="software">
+                <img src="logo_hitasks.jpg" alt="HiTasks Logo">
+                <h2>HiTasks</h2>
+                <p>Logiciel de gestion des tâches</p>
+                <a class="download-link" href="https://t.me/winivers_Tech">Télécharger</a>
+            </div>
+            <div class="software">
+                <img src="logo_hipaint.jpg" alt="HiPaint Logo">
+                <h2>HiPaint</h2>
+                <p>Logiciel de dessin</p>
+                <a class="download-link" href="https://t.me/winivers_software">Télécharger</a>
+            </div>
+            <div class="software">
+                <img src="logo_hicalendar.jpg" alt="HiCalendar Logo">
+                <h2>HiCalendar</h2>
+                <p>Logiciel de calendrier</p>
+                <a class="download-link" href="https://t.me/winivers_Tech">Télécharger</a>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h2>À Propos de Nous</h2>
+        <p>Winivers est une entreprise innovante dédiée à la création de logiciels de haute qualité pour améliorer votre productivité et votre créativité. Nos produits sont conçus pour être intuitifs, efficaces et adaptés aux besoins des utilisateurs modernes.</p>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contactez-Nous</h2>
+        <p>Pour toute question ou demande de support, n'hésitez pas à nous contacter via notre <a href="https://t.me/winivers_Tech">page Telegram</a> ou  via notre <a href="https://facebook.com/winivers">page Facebook</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Winivers Infinity Tech. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#home">Accueil</a> |
+            <a href="#software">Logiciels</a> |
+            <a href="#about">À Propos</a> |
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com/winivers"><i class="fab fa-facebook"></i></a>
+            <a href="https://t.me/winivers_software"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
